@@ -1,0 +1,37 @@
+#header {
+  width:100%;
+  height:60px;
+}
+#nav {
+  width:22%;
+  height:640px;
+  float:left;
+  background-color:#f1f0f5;
+  padding-top:10px;
+}
+#contents {
+  width:78%;
+  height:650px;
+  float:right;
+  background-color: #f1f0f5;
+}
+.youtubetitle {
+  width:100%;
+  height:100px;
+  background-color:#fff;
+  border:2px solid black;
+}
+.youtube { 
+  width:68%;
+  height:500px;
+  background-color: gray;
+  position:relative;
+  left:180px;
+  top:20px;
+  text-align: center;
+  z-index: 2;
+}
+
+body {
+  margin:0px;
+}

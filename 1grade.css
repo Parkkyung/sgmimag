@@ -1,0 +1,102 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family: 'tmonmonsori.ttfregular';}
+a {text-decoration:none;}
+
+.imglist_ul {font-size:0;width:800px;margin:0 auto;padding:10px;}
+.imglist_ul > li {display:inline-block;width:33.3%;vertical-align:top;font-size:12px;}
+a {display:block;width:auto;color:#333;margin:5px 5px 10px 5px;}
+a .screen {position:relative;overflow:hidden;padding-bottom:56.25%;}
+a .screen img {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;z-index:1;}
+a .screen span {display:block;position:absolute;transition:all .2s;background:#30d0c6;z-index:2;}
+a .screen span:nth-child(1) {top:0;height:5px;width:0;}
+a .screen span:nth-child(2) {top:0;right:0;width:5px;height:0;}
+a .screen span:nth-child(3) {bottom:0;right:0;height:5px;width:0;}
+a .screen span:nth-child(4) {bottom:0;left:0;width:5px;height:0;}
+a:hover .screen span:nth-child(1) {width:100%;}
+a:hover .screen span:nth-child(2) {height:100%;transition-delay:.1s;}
+a:hover .screen span:nth-child(3) {width:100%;transition-delay:.2s;}
+a:hover .screen span:nth-child(4) {height:100%;transition-delay:.3s;}
+a h3 {margin:20px 10px;font-size:25px;}
+a p {font-family: 'NanumSquare';margin:0 10px;font-size:12px;line-height:18px;}
+
+* {padding:0;margin:0;}
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + ul {display:block;position:fixed;right:0;top:50%;transform:translateY(-50%);transition:all .35s;text-align:right;}
+input[id="menuicon"] + ul > li {display:block;width:50px;height:50px;border:1px solid #f1f1f1;position:relative;margin-top:-1px;}
+input[id="menuicon"] + ul > li > a {display:block;width:auto;height:50px;overflow:hidden;transition:all .35s;}
+input[id="menuicon"] + ul > li > label {display:block;cursor:pointer;width:auto;height:50px;background:#dadada;}
+input[id="menuicon"] + ul > li:nth-child(1) label span {display:block;position:absolute;width:50%;height:3px;border-radius:30px;background:#333;transition:all .35s;}
+input[id="menuicon"] + ul > li:nth-child(1) label span:nth-child(1) {top:30%;left:50%;transform:translateX(-50%);}
+input[id="menuicon"] + ul > li:nth-child(1) label span:nth-child(2) {top:50%;left:50%;transform:translate(-50%,-50%);}
+input[id="menuicon"] + ul > li:nth-child(1) label span:nth-child(3) {bottom:30%;left:50%;transform:translateX(-50%);}
+input[id="menuicon"] + ul > li:nth-child(2) a .icon {background:url('./img/search.png') center center no-repeat;background-size:50%;display:inline-block;width:50px;height:50px;vertical-align:middle;}
+input[id="menuicon"] + ul > li:nth-child(3) a .icon {background:url('./img/sand-clock.png') center center no-repeat;background-size:50%;display:inline-block;width:50px;height:50px;vertical-align:middle;}
+input[id="menuicon"]:checked + ul {z-index:2;right:400px;}
+input[id="menuicon"]:checked + ul > li:nth-child(1) label {z-index:2;right:400px;}
+input[id="menuicon"]:checked + ul > li:nth-child(1) label span:nth-child(1) {top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg);}
+input[id="menuicon"]:checked + ul > li:nth-child(1) label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + ul > li:nth-child(1) label span:nth-child(3) {bottom:50%;left:50%;transform:translate(-50%,50%) rotate(-45deg);}
+div[class="sidebar"] {width:400px;height:100%;background:white;position:fixed;top:0;right:-400px;z-index:3;transition:all .35s;}
+input[id="menuicon"]:checked + ul + div {right:0;}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 30px;
+    text-align:left;
+    font-size: 35px;
+    color: white;
+    height:150px;
+    text-align: center;
+}
+
+article {
+    float: left;
+    padding-left:20%;
+    width: 100%;
+    background-color:#f1f0f5;
+    height: 1000px;
+    border-radius: 20px;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+article li{
+  background-color:#F6F6F6
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    height:85px;
+}
+
+@media (max-width: 600px) {
+    nav, article,iframe{
+        width: 100%;
+        height: auto;
+    }
+}
+.imglist_ul li {
+  z-index:3;
+}
+.screen {
+  text-decoration:none;
+}
+.Mymag{
+    width:90%;
+    height:50%;
+    background-color: white;
+}
+.Mymag h1 {
+    background-color: gainsboro;
+}
